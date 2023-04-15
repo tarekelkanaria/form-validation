@@ -38,7 +38,7 @@ const BasicForm = () => {
     handleOnBlur: passwordBlur,
     resetInput: resetPassword,
   } = useInput((passwordValue) =>
-    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+    /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!*?])[A-Za-z\d@#$%^&+=!*?]{8,}$/.test(
       passwordValue
     )
   );
